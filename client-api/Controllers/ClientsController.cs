@@ -26,6 +26,7 @@ namespace client_api.Controllers
                 Id = id,
                 Surname = "Africa",
                 Names = "Azania",
+                Email = "a@b.c",
                 IsActive = true,
                 PhoneNumbers = new List<Phone>()
                 {
