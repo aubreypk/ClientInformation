@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zGEziKRD5veepmzMxGhUXBcxppeihrDErqdjCweMIbynwVIt3lcN8Fers7y7oI+EhxdDf1VUR4lN2KDWRHJ5Mg==",
+  "dgSpecHash": "tbkmNQ8DnBaSm8mLAwZjHD3Iy7rdyctMVEfSbDTpXO3w2zI434a6d0G2Y1zzhvzQ2rD5Xae//g+F63vgwPE6wA==",
   "success": true,
   "projectFilePath": "/Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/client-api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/aubreykhoza/.nuget/packages/stub.system.data.sqlite.core.netstandard/1.0.113.2/stub.system.data.sqlite.core.netstandard.1.0.113.2.nupkg.sha512",
+    "/Users/aubreykhoza/.nuget/packages/system.data.sqlite.core/1.0.113.7/system.data.sqlite.core.1.0.113.7.nupkg.sha512"
+  ],
   "logs": []
 }
