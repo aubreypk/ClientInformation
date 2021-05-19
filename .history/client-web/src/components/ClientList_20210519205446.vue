@@ -38,7 +38,7 @@
                             </span>
                         </td>
                         <td>
-                            <router-link :to="{name: 'edit', params: { id: client.id }}" class="btn btn-primary">Edit</router-link>
+                            <router-link :to="{client: 'edit', params: { id: client.id }}" class="btn btn-primary">Edit</router-link>
                             <button @click.prevent="deleteClient(client.id)" class="btn btn-danger">Delete</button>
                         </td>
                     </tr>

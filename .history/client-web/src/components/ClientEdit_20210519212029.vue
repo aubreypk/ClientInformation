@@ -54,6 +54,8 @@
         methods: {
             onFormSubmit(event) { 
                 event.preventDefault()
+                alert(JSON.stringify(this.client)) 
+
                 ClientDataService.create(this.$route.params.id, this.client)
                     .then(response => {
                         console.log(response.data);

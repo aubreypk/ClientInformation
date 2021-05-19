@@ -19,26 +19,26 @@
                         <td>{{ client.names }}</td>
                         <td>{{ client.email }}</td>
                         <td>
-                            <span v-for="number in client.phoneNumbers" :key="number.id">
+                            <span class="" v-for="number in client.phoneNumbers" :key="number.id">
                                 <span class="">
                                     <strong>{{number.type}}</strong><br />
                                     {{number.number}}
                                 </span>
-                                <br />
                             </span>
                         </td>
                         <td>
-                            <span v-for="address in client.addresses" :key="address.id">
-                                <span>
+                            <ul class="list-group list-group-flush" v-for="address in client.addresses" :key="address.id">
+                                <li class="list-group-item">
                                     <strong>{{address.type}}</strong><br />
                                     {{address.line1}}, {{address.line2}} <br />
                                     {{address.city}}, {{address.country}} <br />
                                     {{address.code}} <br />
-                                </span>
-                            </span>
+                                </li>
+                            </ul>
                         </td>
                         <td>
-                            <router-link :to="{name: 'edit', params: { id: client.id }}" class="btn btn-primary">Edit</router-link>
+                            <router-link :to="{client: 'edit', params: { id: client.id }}" class="btn btn-primary">Edit
+                            </router-link>
                             <button @click.prevent="deleteClient(client.id)" class="btn btn-danger">Delete</button>
                         </td>
                     </tr>
@@ -69,16 +69,6 @@
                 console.log(e);
                 });
             },
-            deleteClient(id){
-              if (window.confirm("Are you sure you want to delete client?")) {
-                ClientDataService.delete(id).then(() => {
-                    console.log("Client deleted!");
-                })
-                .catch((error) => {
-                    console.error(error);
-                })
-              }
-            }
         },
         mounted() {
             this.retrieveClients();

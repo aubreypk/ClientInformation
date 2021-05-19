@@ -38,7 +38,7 @@
                             </span>
                         </td>
                         <td>
-                            <router-link :to="{name: 'edit', params: { id: client.id }}" class="btn btn-primary">Edit</router-link>
+                            <router-link :to="{client: 'edit', params: { id: client.id }}" class="btn btn-primary">Edit</router-link>
                             <button @click.prevent="deleteClient(client.id)" class="btn btn-danger">Delete</button>
                         </td>
                     </tr>
@@ -69,16 +69,6 @@
                 console.log(e);
                 });
             },
-            deleteClient(id){
-              if (window.confirm("Are you sure you want to delete client?")) {
-                ClientDataService.delete(id).then(() => {
-                    console.log("Client deleted!");
-                })
-                .catch((error) => {
-                    console.error(error);
-                })
-              }
-            }
         },
         mounted() {
             this.retrieveClients();

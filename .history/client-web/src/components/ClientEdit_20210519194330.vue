@@ -6,17 +6,17 @@
             <form @submit.prevent="onFormSubmit">
                 <div class="form-group">
                     <label>Surname</label>
-                    <input type="text" class="form-control" v-model="client.surname" required>
+                    <input type="text" class="form-control" v-model="user.surname" required>
                 </div>
 
                 <div class="form-group">
                     <label>Names</label>
-                    <input type="text" class="form-control" v-model="client.names" required>
+                    <input type="text" class="form-control" v-model="user.names" required>
                 </div>
 
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" class="form-control" v-model="client.email" required>
+                    <input type="email" class="form-control" v-model="user.email" required>
                 </div>
 
                 <div class="form-group">
@@ -41,22 +41,14 @@
                 }
             }
         },
-        created() {
-            ClientDataService.get(this.$route.params.id)
-                .then(response => {
-                    this.client = response.data;
-                    console.log(response.data);
-                })
-                .catch(e => {
-                console.log(e);
-            });
-        },
         methods: {
             onFormSubmit(event) { 
                 event.preventDefault()
+                alert(JSON.stringify(this.client)) 
+
                 ClientDataService.create(this.$route.params.id, this.client)
                     .then(response => {
-                        console.log(response.data);
+                        console.log("User Update success");
                         this.$router.push('/')
                     })
                     .catch(e => {
