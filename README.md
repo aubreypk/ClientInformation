@@ -23,4 +23,5 @@ Althogh cors is enabled on api, http Post gives cors error when creating new
 Content type issue on delete
 
 [ToDO]
+Save of multiple phone and address incomplete
 Save to csv incomplete
