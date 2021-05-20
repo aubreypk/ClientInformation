@@ -17,3 +17,9 @@
 /Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/obj/Debug/netcoreapp3.1/client-api.dll
 /Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/obj/Debug/netcoreapp3.1/client-api.pdb
 /Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/obj/Debug/netcoreapp3.1/client-api.genruntimeconfig.cache
+/Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/bin/Debug/netcoreapp3.1/System.Data.SQLite.dll
+/Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/SQLite.Interop.dll
+/Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/SQLite.Interop.dll
+/Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/SQLite.Interop.dll
+/Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/SQLite.Interop.dll
+/Volumes/YoungDrive/My Files/Dev/Assignments/ClientInformation/client-api/obj/Debug/netcoreapp3.1/client-api.csproj.CopyComplete

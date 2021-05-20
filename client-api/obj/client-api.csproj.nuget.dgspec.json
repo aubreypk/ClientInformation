@@ -41,7 +41,7 @@
           "dependencies": {
             "System.Data.SQLite.Core": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[1.0.113.7, )"
             }
           },
           "imports": [
